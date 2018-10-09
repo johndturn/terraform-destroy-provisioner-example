@@ -4,6 +4,10 @@ In the process of writing some Terraform configs for work, I came across what I 
 
 This repo is meant to be a basic example reproducing this issue.
 
+## Update!
+
+After working with `@jbardin`, a contributor to Terraform, we've discovered that this issue actually lies in the use of destroy-time provisioners and `terraform taint`. This is a known issue, and can be followed here: https://github.com/hashicorp/terraform/issues/13549#issuecomment-293627472.
+
 ## Testing
 
 In order to test this, clone the repo, `cd` into it, and run the following:
